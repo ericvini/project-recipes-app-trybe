@@ -1,0 +1,436 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 10,
+    "passes": 0,
+    "pending": 0,
+    "failures": 10,
+    "start": "2021-01-26T21:46:51.279Z",
+    "end": "2021-01-26T21:48:44.091Z",
+    "duration": 112812,
+    "testsRegistered": 10,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5b58265b-34a4-4c7b-9a24-b5a14f923e48",
+      "title": "",
+      "fullFile": "cypress/integration/done_recipes_spec.js",
+      "file": "cypress/integration/done_recipes_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e011d31-4eaa-483f-bef2-4873f1d88906",
+          "title": "Done recipes screen",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "2869db42-543b-4d8d-aab6-f20a03ac8868",
+              "title": "54 - Implemente os elementos da tela de receitas feitas respeitando os atributos descritos no protótipo",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Todos os data-testids estão disponíveis",
+                  "fullTitle": "Done recipes screen 54 - Implemente os elementos da tela de receitas feitas respeitando os atributos descritos no protótipo Todos os data-testids estão disponíveis",
+                  "timedOut": null,
+                  "duration": 12378,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"filter-by-all-btn\"]');\ncy.get('[data-testid=\"filter-by-food-btn\"]');\ncy.get('[data-testid=\"filter-by-drink-btn\"]');\ncy.get('[data-testid=\"0-horizontal-image\"]');\ncy.get('[data-testid=\"0-horizontal-top-text\"]');\ncy.get('[data-testid=\"0-horizontal-name\"]');\ncy.get('[data-testid=\"0-horizontal-done-date\"]');\ncy.get('[data-testid=\"0-horizontal-share-btn\"]');\ncy.get('[data-testid=\"0-Pasta-horizontal-tag\"]');\ncy.get('[data-testid=\"0-Curry-horizontal-tag\"]');\ncy.get('[data-testid=\"1-horizontal-image\"]');\ncy.get('[data-testid=\"1-horizontal-top-text\"]');\ncy.get('[data-testid=\"1-horizontal-name\"]');\ncy.get('[data-testid=\"1-horizontal-share-btn\"]');\ncy.get('[data-testid=\"1-horizontal-done-date\"]');",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-all-btn\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-all-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "3a21eff0-9e05-4783-8d10-d82d1a80bd62",
+                  "parentUUID": "2869db42-543b-4d8d-aab6-f20a03ac8868",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "3a21eff0-9e05-4783-8d10-d82d1a80bd62"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 12378,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "4179edd1-2504-4888-8657-7e25a15c2ca0",
+              "title": "55 - Desenvolva a tela de maneira que, caso a receita do card seja uma comida, ela deve possuir: a foto da receita, o nome, a categoria, a area, a data em que a pessoa fez a receita, as 2 primeiras tags retornadas pela API e um botão de compartilhar",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O card possui os atributos corretos de uma comida",
+                  "fullTitle": "Done recipes screen 55 - Desenvolva a tela de maneira que, caso a receita do card seja uma comida, ela deve possuir: a foto da receita, o nome, a categoria, a area, a data em que a pessoa fez a receita, as 2 primeiras tags retornadas pela API e um botão de compartilhar O card possui os atributos corretos de uma comida",
+                  "timedOut": null,
+                  "duration": 10600,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"0-horizontal-image\"]').should('have.attr', 'src').should('include', doneRecipes[0].image);\ncy.get('[data-testid=\"0-horizontal-top-text\"]').contains(\"\".concat(doneRecipes[0].area, \" - \").concat(doneRecipes[0].category));\ncy.get('[data-testid=\"0-horizontal-name\"]').contains(doneRecipes[0].name);\ncy.get('[data-testid=\"0-horizontal-share-btn\"]').should('have.attr', 'src').should('include', 'shareIcon');\ncy.get('[data-testid=\"0-horizontal-done-date\"]').contains('23/06/2020');\ncy.get('[data-testid=\"0-Pasta-horizontal-tag\"]').contains(doneRecipes[0].tags[0]);\ncy.get('[data-testid=\"0-Curry-horizontal-tag\"]').contains(doneRecipes[0].tags[1]);",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-image\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-image\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "c7bbe71c-1aff-4fbe-8686-819aacb395a8",
+                  "parentUUID": "4179edd1-2504-4888-8657-7e25a15c2ca0",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "c7bbe71c-1aff-4fbe-8686-819aacb395a8"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10600,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "f1f0a1d4-de9a-4802-b276-774f441dde0d",
+              "title": "56 - Desenvolva a tela de maneira que, caso a receita do card seja uma bebida, ela deve possuir: a foto da receita, o nome, se é alcoólica, a data em que a pessoa fez a receita e um botão de compartilhar",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "O card possui os atributos corretos de uma bebida",
+                  "fullTitle": "Done recipes screen 56 - Desenvolva a tela de maneira que, caso a receita do card seja uma bebida, ela deve possuir: a foto da receita, o nome, se é alcoólica, a data em que a pessoa fez a receita e um botão de compartilhar O card possui os atributos corretos de uma bebida",
+                  "timedOut": null,
+                  "duration": 10651,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"1-horizontal-image\"]').should('have.attr', 'src').should('include', doneRecipes[1].image);\ncy.get('[data-testid=\"1-horizontal-top-text\"]').contains(doneRecipes[1].alcoholicOrNot);\ncy.get('[data-testid=\"1-horizontal-name\"]').contains(doneRecipes[1].name);\ncy.get('[data-testid=\"1-horizontal-share-btn\"]').should('have.attr', 'src').should('include', 'shareIcon');\ncy.get('[data-testid=\"0-horizontal-done-date\"]').contains('23/06/2020');",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"1-horizontal-image\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"1-horizontal-image\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "b9d1bdb4-ef87-464d-9a74-a8451188f27b",
+                  "parentUUID": "f1f0a1d4-de9a-4802-b276-774f441dde0d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "b9d1bdb4-ef87-464d-9a74-a8451188f27b"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 10651,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "03ecf143-222f-4d99-ba27-81efbd0fd535",
+              "title": "57 - Desenvolva a solução de maneira que o botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Ao clicar no botão de compartilhar deve aparecer a mensagem \"Link copiado!\"",
+                  "fullTitle": "Done recipes screen 57 - Desenvolva a solução de maneira que o botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard Ao clicar no botão de compartilhar deve aparecer a mensagem \"Link copiado!\"",
+                  "timedOut": null,
+                  "duration": 10921,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"0-horizontal-share-btn\"]').click();\ncy.contains('Link copiado!');",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-share-btn\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-share-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "3969a9fb-2f43-4331-b457-ec071e6c16f5",
+                  "parentUUID": "03ecf143-222f-4d99-ba27-81efbd0fd535",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "A URL da tela de detalhes da receita é copiada para o clipboard",
+                  "fullTitle": "Done recipes screen 57 - Desenvolva a solução de maneira que o botão de compartilhar deve copiar a URL da tela de detalhes da receita para o clipboard A URL da tela de detalhes da receita é copiada para o clipboard",
+                  "timedOut": null,
+                  "duration": 10643,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"0-horizontal-share-btn\"]').click();\ncy.window().then(function (win) {\n  cy.wrap(win.navigator.clipboard.readText()).should('eq', 'http://localhost:3000/comidas/52771');\n});",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-share-btn\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-share-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "3fb8779d-a191-4002-877b-8b816f941981",
+                  "parentUUID": "03ecf143-222f-4d99-ba27-81efbd0fd535",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "3969a9fb-2f43-4331-b457-ec071e6c16f5",
+                "3fb8779d-a191-4002-877b-8b816f941981"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 21564,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "6b01d642-653a-48f5-9d38-dd60ec544ccb",
+              "title": "58 - Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Ao clicar no botão \"Food\" as receitas devem ser filtradas por comidas",
+                  "fullTitle": "Done recipes screen 58 - Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros Ao clicar no botão \"Food\" as receitas devem ser filtradas por comidas",
+                  "timedOut": null,
+                  "duration": 10588,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"filter-by-food-btn\"]').click();\ncy.get('[data-testid=\"0-horizontal-name\"]').contains(doneRecipes[0].name);\ncy.get('[data-testid=\"1-horizontal-name\"]').should('not.exist');",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-food-btn\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-food-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "aa6e1ce0-8404-46fe-9ad0-e7cbaff9b089",
+                  "parentUUID": "6b01d642-653a-48f5-9d38-dd60ec544ccb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Ao clicar no botão \"Drinks\" as receitas devem ser filtradas por bebidas",
+                  "fullTitle": "Done recipes screen 58 - Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros Ao clicar no botão \"Drinks\" as receitas devem ser filtradas por bebidas",
+                  "timedOut": null,
+                  "duration": 10606,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"filter-by-drink-btn\"]').click();\ncy.get('[data-testid=\"0-horizontal-name\"]').contains(doneRecipes[1].name);\ncy.get('[data-testid=\"1-horizontal-name\"]').should('not.exist');",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-drink-btn\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-drink-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "529d833c-8590-4c2b-a8d4-648fb789e4d9",
+                  "parentUUID": "6b01d642-653a-48f5-9d38-dd60ec544ccb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Ao clicar no botão \"All\" o filtro deve ser removido",
+                  "fullTitle": "Done recipes screen 58 - Implemente 2 botões que filtram as receitas por comida ou bebida e um terceiro que remove todos os filtros Ao clicar no botão \"All\" o filtro deve ser removido",
+                  "timedOut": null,
+                  "duration": 10592,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"filter-by-food-btn\"]').click();\ncy.get('[data-testid=\"filter-by-all-btn\"]').click();\ncy.get('[data-testid=\"0-horizontal-name\"]').contains(doneRecipes[0].name);\ncy.get('[data-testid=\"1-horizontal-name\"]').contains(doneRecipes[1].name);",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-food-btn\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"filter-by-food-btn\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "e17dceef-c5b7-4d8b-8f57-00fddcb816ce",
+                  "parentUUID": "6b01d642-653a-48f5-9d38-dd60ec544ccb",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "aa6e1ce0-8404-46fe-9ad0-e7cbaff9b089",
+                "529d833c-8590-4c2b-a8d4-648fb789e4d9",
+                "e17dceef-c5b7-4d8b-8f57-00fddcb816ce"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 31786,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "0411ce19-b862-4c64-980d-26d01b4fe945",
+              "title": "59 - Redirecione para a tela de detalhes da receita caso seja clicado na foto ou no nome da receita",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Ao clicar na foto da receita, a rota deve mudar para a tela de detalhes daquela receita",
+                  "fullTitle": "Done recipes screen 59 - Redirecione para a tela de detalhes da receita caso seja clicado na foto ou no nome da receita Ao clicar na foto da receita, a rota deve mudar para a tela de detalhes daquela receita",
+                  "timedOut": null,
+                  "duration": 10904,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"0-horizontal-image\"]').click();\ncy.location().should(function (loc) {\n  return expect(loc.pathname).to.eq('/comidas/52771');\n});",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-image\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"0-horizontal-image\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "5c54f376-cd5b-4d24-ad67-5f81ec3211a9",
+                  "parentUUID": "0411ce19-b862-4c64-980d-26d01b4fe945",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Ao clicar no nome da receita, a rota deve mudar para a tela de detalhes daquela receita",
+                  "fullTitle": "Done recipes screen 59 - Redirecione para a tela de detalhes da receita caso seja clicado na foto ou no nome da receita Ao clicar no nome da receita, a rota deve mudar para a tela de detalhes daquela receita",
+                  "timedOut": null,
+                  "duration": 11099,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get('[data-testid=\"1-horizontal-name\"]').click();\ncy.location().should(function (loc) {\n  return expect(loc.pathname).to.eq('/bebidas/178319');\n});",
+                  "err": {
+                    "message": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"1-horizontal-name\"]', but never found it.",
+                    "estack": "CypressError: Timed out retrying: Expected to find element: '[data-testid=\"1-horizontal-name\"]', but never found it.\n    at Object.cypressErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://localhost:3000/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://localhost:3000/__cypress/runner/cypress_runner.js:86194:17)\n    at retry (http://localhost:3000/__cypress/runner/cypress_runner.js:76849:16)\n    at onFailFn (http://localhost:3000/__cypress/runner/cypress_runner.js:65634:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:114812:14)",
+                    "diff": null
+                  },
+                  "uuid": "e609508b-d377-45d4-8aee-4b2d889a7f43",
+                  "parentUUID": "0411ce19-b862-4c64-980d-26d01b4fe945",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "5c54f376-cd5b-4d24-ad67-5f81ec3211a9",
+                "e609508b-d377-45d4-8aee-4b2d889a7f43"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 22003,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

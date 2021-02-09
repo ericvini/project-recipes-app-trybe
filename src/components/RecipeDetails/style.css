@@ -1,0 +1,9 @@
+.recommended-container {
+  display: flex;
+}
+
+.start-button {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}

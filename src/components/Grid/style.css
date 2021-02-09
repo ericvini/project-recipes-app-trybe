@@ -1,0 +1,4 @@
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+}
